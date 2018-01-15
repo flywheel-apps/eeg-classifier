@@ -1,0 +1,24 @@
+{
+	"name": "brain-vision-eeg-classifier",
+	"label": "Brain Vision EEG Classifier",
+	"description": "Classifies Brain Vision EEG files by parsing the .vhdr file and appending identified metadata attributes to Flywheel custom metadata.",
+	"version": "1.0",
+	"flywheel": "0",
+	"inputs": {
+		"file": {
+			"base": "file",
+			"description": "Brain Vision EEG file in FW zip format"
+		}
+	},
+	"config": {},
+	"author": "Travis Richardson",
+	"maintainer": "Travis Richardson",
+	"license": "MIT",
+	"source": "https://github.com/flywheel-apps/eeg-classifier",
+	"url": "https://github.com/flywheel-apps/eeg-classifier",
+	"custom": {
+		"gear-builder": {
+			"image": "python:slim"
+		}
+	}
+}
