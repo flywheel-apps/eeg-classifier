@@ -1,13 +1,13 @@
 {
   "name": "brain-vision-eeg-classifier",
   "label": "Brain Vision EEG Classifier",
-  "description": "Classifies Brain Vision EEG files by parsing the .vhdr file and appending identified metadata attributes to Flywheel custom metadata.",
-  "version": "1.0",
+  "description": "Classifies Brain Vision EEG data and appends metadata attributes to the file's custom info structure within Flywheel. Input to this gear is a Flywheel packaged EEG archive (.eeg.zip) containing Brain Vision EEG data (in .vhdr format). Output is a JSON file (.metadata.json) containing metadata that will be used by the Flywheel platform to populate the input file's custom info fields.",
+  "version": "1.0.0",
   "flywheel": "0",
   "inputs": {
     "file": {
       "base": "file",
-      "description": "Brain Vision EEG file in FW zip format",
+      "description": "Brain Vision EEG data file packaged in Flywheel zip format (.eeg.zip).",
       "type": {
         "enum": [
           "eeg"
