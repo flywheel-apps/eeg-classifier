@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import sys
 import os
 import re
@@ -6,14 +8,14 @@ import json
 
 
 # Gear basics
-input_folder = 'input/file/'
-output_folder = 'output/'
+input_folder = '/flywheel/v0/input/file/'
+output_folder = '/flywheel/v0/output/'
 
 # Declare the output path
 output_filepath = os.path.join(output_folder, '.metadata.json')
 
 # declare config file path
-config_file_path = 'config.json'
+config_file_path = '/flywheel/v0/config.json'
 
 
 # prepare container object for .metadata.json file
@@ -90,7 +92,3 @@ with open(output_filepath,'w') as outfile:
 
 print('\nJob completed successfully!!\n')
 exit(0)
-
-
-
-
