@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-python eeg_classifier.py
-
-
